@@ -1,0 +1,16 @@
+<!--pages/login/index.wxml-->
+<view class="boxs">
+  <view class="title">线上驾驶员</view>
+ <view class="inputBox">
+   <image class="icon" src="../../icons/user.png"></image>
+   <input class="input" bindinput="mobileFun" value="{{password}}"  type="text" placeholder="请输入用户名"/>
+ </view>
+ <view class="inputBox">
+   <image class="icon" src="../../icons/pass.png"></image>
+   <input class="input" password  bindinput="passFun" value="{{password}}" type="text" placeholder="请输入密码" />
+ </view>
+ <view class="inputBox" style="margin-top: 80rpx;">
+   <view class="btndn" bindtap="loginFun">登录</view>
+ </view>
+
+</view>

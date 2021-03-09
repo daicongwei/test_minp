@@ -1,0 +1,224 @@
+/**index.wxss**/
+page{
+  background-color: #f4f4f4;
+}
+
+.cardBox{
+  width: 670rpx;
+  height: 300rpx;
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+  padding: 20rpx;
+  /* background-color: #000; */
+  position: relative;
+}
+
+.cardBox::after{
+  display: block;
+  content: '';
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  background-color: #f4f4f4;
+  left: -20rpx;
+  top: 160rpx;
+  z-index: 2;
+  border-radius: 50%;
+}
+.cardBox::before{
+  display: block;
+  content: '';
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  background-color: #f4f4f4;
+  right: -20rpx;
+  top: 160rpx;
+  z-index: 2;
+  border-radius: 50%;
+}
+.nameView{
+  font-size: 30rpx;
+  color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.address{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: rgba(255,255,255,0.8);
+  display: flex;
+  align-content: center;
+  padding-left: 30rpx;
+}
+.addIcon{
+  width: 30rpx;
+  height: 30rpx;
+  object-fit: cover;
+  margin-right: 10rpx;
+}
+.introduction{
+padding-left: 0;
+text-indent: 2em;
+font-size: 24rpx;
+}
+.lineView{
+  height: 0;
+  width: 90%;
+  border: dashed 1rpx rgba(255,255,255,0.2);
+  margin: 20rpx auto;
+}
+.logoView{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  height: 50rpx;
+  width: 50rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.rigthtbtn{
+  float: right;
+  font-size: 24rpx;
+  display: block;
+  height: 50rpx;
+  width: 120rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 50rpx;
+}
+.rigthtbtn:active{
+  background-color: rgba(255,255,255,0.2);
+}
+.gongsiCard{
+  background: 
+  linear-gradient(to right, #5daee2 , #17a1ff);
+}
+.kechengCard{
+  background: 
+  linear-gradient(to right, #f38f51 , #dc5a74);
+}
+
+
+
+
+
+
+
+.container{
+  width: 710rpx;
+  height: 260rpx;
+  /* border: red solid 1rpx; */
+  background: #5da6f1;
+  margin: 30rpx auto;
+  position: relative;
+}
+.container::after{
+  display: block;
+  content: '';
+  height: 40rpx;
+  width: 100%;
+  position: absolute;
+  background-color: #f4f4f4;
+  left: 0;
+  top: -20rpx;
+  z-index: 2;
+  border-radius: 40%;
+}
+.container::before{
+  display: block;
+  content: '';
+  height: 40rpx;
+  width: 100%;
+  position: absolute;
+  background-color: #f4f4f4;
+  left: 0;
+  bottom: -20rpx;
+  z-index: 2;
+  border-radius: 40%;
+}
+.viewBox{
+  /* display: none; */
+  position: absolute;
+  width: 650rpx;
+  height: 300rpx;
+  top: -20rpx;
+  left: 30rpx;
+  background-color: #fff;
+  border: #5da6f1 solid 1rpx;
+  /* background-color: #318fef; */
+  /* background: #9e9e9e; */
+  /* border-image: url(../../icons/bg.jpg);
+  background-size: cover; */
+  /* background-image: radial-gradient(#88c3ff, #4baee8, #4585b3); */
+  z-index: 3;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 6rpx;
+  box-shadow: rgba(255,255,255,0.2) 2rpx 2rpx 5rpx;
+}
+/* .viewBG{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+} */
+.logo{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}
+.logoImg{
+  width: 80rpx;
+  height: 80rpx;
+  object-fit: cover;
+}
+.nameBig{
+color: #000;
+font-size: 36rpx;
+
+}
+/* .address{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: rgba(0,0,0,0.5);
+  display: flex;
+  align-content: center;
+}
+.addIcon{
+  width: 30rpx;
+  height: 30rpx;
+  object-fit: cover;
+  margin-right: 10rpx;
+} */
+.jianjie{
+  font-size: 24rpx;
+  text-indent: 2em;
+  margin-top: 20rpx;
+  color: rgba(0,0,0,0.5);
+}
+.imgBox{
+  height: 350rpx;
+  width: 690rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin: 60rpx auto;
+  position: relative;
+  box-shadow: rgba(0,0,0,0.5) 3rpx 3rpx 10rpx;
+}
+.iconplay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 90rpx;
+  width: 90rpx;
+}
+.imgvideo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

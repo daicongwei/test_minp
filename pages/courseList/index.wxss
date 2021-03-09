@@ -1,0 +1,74 @@
+/* pages/courseList/index.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.ul_box{
+  width: 680rpx;
+  margin: 0 auto;
+}
+.li_View{
+  display: flex;
+  /* height: 150rpx; */
+  overflow: hidden;
+  /* border: red solid 1rpx; */
+  border-radius: 10rpx;
+  background-color: #fff;
+  padding: 10rpx;
+  box-sizing: border-box;
+  margin: 10rpx auto;
+}
+.leftimg{
+  height: 150rpx;
+  width: 200rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+.leftimg .img{
+  height: 150rpx;
+  width: 200rpx;
+  object-fit: cover;
+}
+.rightBox{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.titel{
+  font-size: 30rpx;
+  color: #313131;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.time{
+  font-size: 24rpx;
+  margin-top: auto;
+  color: #909090;
+}
+.dibox{
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  /* color: #909090; */
+  margin-top: 5rpx;
+}
+.rightarrow{
+  display: flex;
+  align-content: center;
+  color: #318fef;
+}
+.nostudy{
+  color: #ea1b1b;
+  font-size: 24rpx;
+}
+.finstudy{
+  color: #07c160;
+}
+.gray{
+  color: #909090;
+}

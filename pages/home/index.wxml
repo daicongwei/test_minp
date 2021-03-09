@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="viewBox">
+
+    <view class="logo">
+      <image class="logoImg" src="{{company.logo}}"></image>
+    </view>
+    <view class="nameBig">{{company.companyName}}</view>
+    <view class="address"><image class="addIcon" src="../../icons/address_a.png"></image> <text>{{company.address}}</text> </view>
+    <view class="address"><image class="addIcon" src="../../icons/phone.png"></image> <text>{{company.mobile}}</text> </view>
+    <view class="jianjie">{{company.introduction}}</view>
+  </view>
+</view>
+
+<view class="imgBox">
+  <image class="imgvideo" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1819745190,69327906&fm=26&gp=0.jpg"></image>
+  <image class="iconplay" src="../../icons/play.png"></image>
+</view> -->
+
+
+<view class="cardBox gongsiCard">
+  <view class="logoView">
+    <image src="{{company.logo}}"></image>
+  </view>
+  <view class="nameView">{{company.companyName}}</view>
+  <view class="address">
+    <image class="addIcon" src="../../icons/phone_a.png"></image> <text>{{company.mobile}}</text>
+  </view>
+  <view class="address">
+    <image class="addIcon" src="../../icons/address.png"></image> <text>{{company.address}}</text>
+  </view>
+  <view class="lineView"></view>
+  <view class="address introduction">{{company.introduction}}</view>
+</view>
+
+
+<view class="cardBox kechengCard">
+  <!-- <view class="buyBtn">购买</view> -->
+  <!-- <view class="nameView">{{course.courseName}} <text class="rigthtitel">总时长：{{course.courseDuration}}min</text></view> -->
+  <view class="nameView">
+    {{course.courseName}} 
+    <text class="rigthtbtn" wx:if="{{course.isBuy == 1}}"  bindtap="toList">观看</text>
+    <text class="rigthtbtn" wx:else  bindtap="toList">购买</text>
+  </view>
+  <view class="address">
+    <image class="addIcon" src="../../icons/teacher.png"></image> <text>授课老师：{{course.teacher}}</text>
+  </view>
+  <view class="address">
+    <image class="addIcon" src="../../icons/kecheng.png"></image> <text>课程价格：{{course.price}}元</text>
+  </view>
+  <view class="lineView"></view>
+  <view class="address introduction">{{course.introduction}}</view>
+
+</view>

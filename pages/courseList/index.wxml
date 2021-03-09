@@ -1,0 +1,25 @@
+<!--pages/courseList/index.wxml-->
+<view class="ul_box">
+  <view class="li_View" bindtap="toPlay" wx:for="{{list}}" wx:key="index" data-item="{{item}}">
+    <view class="leftimg">
+      <image class="img" src="{{courseImg}}"></image>
+    </view>
+    <view class="rightBox">
+      <view class="titel">{{item.cataName}}</view>
+      <view class="time">课程时长：{{item.cataDuration}}min</view>
+      <view class="dibox" >
+        <block wx:if="{{item.sort == sort}}">
+          <view class="nostudy">上次学习到：{{item.showTime}}min</view>
+        <view class="rightarrow">去学习  <van-icon name="arrow" /></view>
+        </block>
+        <block wx:if="{{item.sort < sort}}">
+          <view class="nostudy gray">已学习</view>
+        </block>
+        <block wx:if="{{item.sort > sort}}">
+          <view class="nostudy">未学习</view>
+        </block>
+        
+      </view>
+    </view>
+  </view>
+</view>

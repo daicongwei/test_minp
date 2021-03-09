@@ -1,0 +1,75 @@
+<!--pages/mine/index.wxml-->
+<view class="headBg">
+  <view class="styleView"></view>
+  <view class="headContBox">
+    <view class="whiBox">
+      <view class="imgb">
+        <image wx:if="{{user.username}}" class="img" src="../../icons/siji.jpg"></image>
+        <image wx:else class="img" src="../../icons/siji_a.jpg"></image>
+      </view>
+      <view wx:if="{{!user.username}}" class="login_No" bindtap="toLogin">
+        点击登录
+      </view>
+      <view class="infoBox" wx:if="{{user.username}}">
+        <view class="nameV">{{user.username}} <text class="text">{{user.gender == 1?'男':'女'}}</text></view>
+        <view class="phoneV">{{user.mobile}}</view>
+        <view class="company">{{user.companyName}}</view>
+      </view>
+      <view class="righttag" wx:if="{{user.username}}">
+        <image class="huiyuanICon" src="../../icons/huiyuan.png"></image> 在职
+      </view>
+    </view>
+
+    <view class="botmBOx">
+      <view class="singleView">
+        <view class="text1">{{user.licensePlateNumber}}</view>
+        <view class="text2">绑定车辆</view>
+      </view>
+      <view class="lineView"></view>
+      <view class="singleView">
+        <view class="text1">{{user.age}}</view>
+        <view class="text2">年龄</view>
+      </view>
+      <view class="lineView"></view>
+      <view class="singleView">
+        <view class="text1">{{user.hireDate}}</view>
+        <view class="text2">入职时间</view>
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="studyBox" style="display:none">
+  <view class="titleBox">
+    <image class="studyIcon" src="../../icons/study.png"></image>
+    <text class="h3">我的学习情况</text>
+  </view>
+  <view class="mindBox">
+    <view class="singlSdy">
+      <view class="tex_1">已学习</view>
+      <view class="tex_2"><text class="bt"> 120 </text>分钟</view>
+    </view>
+    <view class="singlSdy">
+      <view class="tex_1" style="color:#999">待学习</view>
+      <view class="tex_2" style="color:#999"><text> 80 </text>分钟</view>
+    </view>
+  </view>
+</view>
+
+<view class="cellBox">
+  <van-cell title="购买记录" icon="coupon-o" is-link bindtap="buyCode" />
+  <van-cell title="学习情况" icon="bar-chart-o" is-link bindtap="studyFun" />
+  <van-cell title="身份证号" icon="manager-o" is-link bindtap="idcardFun" />
+
+</view>
+
+<van-dialog use-slot title="身份证号" show="{{ idCardshow }}" show-cancel-button showConfirmButton="{{false}}"
+  closeOnClickOverlay>
+  <view class="idcared">{{user.idCardNo}}</view>
+</van-dialog>
+
+<van-dialog use-slot title="学习情况" show="{{ studyshow }}" show-cancel-button showConfirmButton="{{false}}"
+  closeOnClickOverlay>
+  <view class="studyDia">当月待学习：{{user.residuestudyDuration}}分钟</view>
+  <view class="studyDia">当月已学习：{{user.studyDuration}}分钟</view>
+</van-dialog>

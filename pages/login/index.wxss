@@ -1,0 +1,47 @@
+/* pages/login/index.wxss */
+.boxs{
+  
+}
+.title{
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 600;
+  margin: 100rpx;
+}
+.inputBox{
+  height: 70rpx;
+  width: 500rpx;
+  margin: 30rpx auto;
+  background: #f4f4f4;
+  border-radius: 35rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.icon{
+  display: block;
+  height: 30rpx;
+  width: 30rpx;
+  object-fit: cover;
+  margin-top: 20rpx;
+}
+.input{
+  display: inline-block;
+  height: 70rpx;
+  width: 350rpx;
+  margin-left: 50rpx;
+  font-size: 26rpx;
+}
+.btndn{
+  width: 100%;
+  height: 100%;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  background-color: #318fef;
+  text-align: center;
+  color: #fff;
+  border-radius: 70rpx;
+}
+.btndn:active{
+  background-color: #2581de;
+}

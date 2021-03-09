@@ -1,0 +1,4 @@
+<!--pages/coursePlay/index.wxml-->
+<view class="box">
+  <video style="width:690rpx" wx:if="{{isshow}}" controls autoplay initialTime="{{courseItem.stopTime}}" show-fullscreen-btn  title="{{courseItem.cataName}}" src="{{courseItem.videoLink}}" bindtimeupdate="bindtimeupdate" ></video>
+</view>

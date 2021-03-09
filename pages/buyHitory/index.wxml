@@ -1,0 +1,14 @@
+<!--pages/buyHitory/index.wxml-->
+<view class="boxUl" wx:for="{{list}}" wx:key="index" data-item="{{item}}"  bindtap="toDetails">
+  <view class="Box_li">
+    <view class="left">
+      <image class="img" src="{{item.courseImg}}"></image>
+    </view>
+    <view class="rightBox">
+      <view class="titel">{{item.courseName}}</view>
+      <view class="boxF">{{item.teacher}} | {{item.courseDuration}}min | ￥{{item.price}}</view>
+      <view class="boxF">{{item.companyName}}</view>
+    </view>
+  </view>
+  <view class="textCont">{{item.introduction}}</view>
+</view>

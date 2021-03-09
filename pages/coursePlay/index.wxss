@@ -1,0 +1,4 @@
+/* pages/coursePlay/index.wxss */
+.box{
+  text-align: center;
+}
