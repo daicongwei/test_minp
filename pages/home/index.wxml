@@ -20,7 +20,7 @@
 
 <view class="cardBox gongsiCard">
   <view class="logoView">
-    <image src="{{company.logo}}"></image>
+    <image class="logoImg" src="{{company.logo}}"></image>
   </view>
   <view class="nameView">{{company.companyName}}</view>
   <view class="address">

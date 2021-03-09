@@ -72,10 +72,17 @@ font-size: 24rpx;
   position: absolute;
   top: 20rpx;
   right: 20rpx;
-  height: 50rpx;
-  width: 50rpx;
+  height: 80rpx;
+  width: 80rpx;
   background-color: #fff;
   border-radius: 50%;
+  overflow: hidden;
+  border: 4rpx solid #fff;
+}
+.logoImg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .rigthtbtn{
   float: right;

@@ -16,7 +16,7 @@ Page({
     })
   },
   toDetails(e){
-    // return;
+    return;
     let {courseId,courseName} = e.currentTarget.dataset.item//课程id
     console.log(e);
     wx.navigateTo({
